@@ -56,6 +56,10 @@
 					// Updates the display
 					graph.getModel().endUpdate();
 				}
+				// Modifica el estilo de los vértices y las aristas
+				graph.getModel().setStyle(v1, 'fillColor=#8EC9FF');
+				graph.getModel().setStyle(v2, 'fillColor=#8EC9FF');
+				graph.getModel().setStyle(e1, 'strokeColor=#0000FF');
 			}
 		};
 	</script>
@@ -66,7 +70,7 @@
 
 	<!-- Creates a container for the graph with a grid wallpaper -->
 	<div id="graphContainer"
-		style="position:relative;overflow:hidden;width:321px;height:241px;background:url('editors/images/grid.gif');cursor:default;">
+		style="position:relative;overflow:hidden;width:321px;height:241px;background-color: white;cursor:default;">
 	</div>
 </body>
 </html>
